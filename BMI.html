@@ -29,11 +29,11 @@
           <span class="ml-2 text-lg font-semibold">BDHealth</span>
         </div>
         <div class="hidden md:flex space-x-4">
-          <a href="#" class="px-3 py-2 rounded hover:bg-[#3E5879]">Home</a>
-          <a href="#" class="px-3 py-2 rounded hover:bg-[#3E5879]">About</a>
-          <a href="#" class="px-3 py-2 rounded hover:bg-[#3E5879]">Services</a>
-          <a href="#" class="px-3 py-2 rounded hover:bg-[#3E5879]">Goals</a>
-          <a href="#" class="px-3 py-2 rounded hover:bg-[#3E5879]">Contact</a>
+          <a href="#home" class="px-3 py-2 rounded hover:bg-[#3E5879]">Home</a>
+          <a href="#about" class="px-3 py-2 rounded hover:bg-[#3E5879]">About</a>
+          <a href="#service" class="px-3 py-2 rounded hover:bg-[#3E5879]">Services</a>
+          <a href="#goals" class="px-3 py-2 rounded hover:bg-[#3E5879]">Goals</a>
+          <a href="#contact" class="px-3 py-2 rounded hover:bg-[#3E5879]">Contact</a>
         </div>
         <button id="menu-toggle" class="block md:hidden focus:outline-none">
           <svg
@@ -69,7 +69,7 @@
 
     <!-- bmi section  -->
     <div
-      class="bmi w-screen h-screen flex flex-col justify-center items-center bg-[#FFF4B7]"
+      class="bmi w-screen flex flex-col justify-center items-center bg-[#FFF4B7] pt-9"
     >
       <div class="bmi-calc-left">
         <img
@@ -125,10 +125,186 @@
           </select>
         </div>
         <div class="bmi-button text-right">
-          <button id="calculate-btn" class="button-green mt-4">Calculate</button>
+          <button id="calculate-btn" class="button-green mt-4">
+            Calculate
+          </button>
         </div>
 
         <div id="result" class="mt-4 text-center text-[#003161]"></div>
+      </div>
+
+      <!-- chetegories of BMI  -->
+      <div class="categories max-w-screen-lg">
+        <div class="container">
+          <h1
+            class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-center text-[#17B8A6] mt-9"
+          >
+            Categorie fo BMI
+          </h1>
+          <p class="text-lg mb-10 text-center">
+            This is for informational purposes only. For medical advice or
+            diagnosis, consult a professional.
+          </p>
+          <div class="cat content">
+            <!-- cat-1  -->
+            <div class="cat-1 p-3">
+              <h1 class="text-xl font-bold mb-4 text-center text-[#17B8A6]">
+                Under-weight
+              </h1>
+              <p class="mb-4">
+                If your BMI is underweight, it means your weight is lower than
+                what is considered healthy for your height.
+              </p>
+              <h3>Potential Health Risks Associated with Being Underweight:</h3>
+              <ul class="list-disc mx-3">
+                <li>
+                  <span class="font-bold">Malnutrition:</span> Not getting
+                  enough nutrients can lead to deficiencies in essential
+                  vitamins and minerals, which can weaken your immune system,
+                  slow growth and development, and cause various health
+                  problems.  
+                </li>
+                <li>
+                  <span class="font-bold">Muscle Loss:</span> Underweight
+                  individuals may have less muscle mass, which can lead to
+                  weakness, fatigue, and decreased bone density.  
+                </li>
+                <li>
+                  <span class="font-bold">Hormonal Imbalances:</span> Being
+                  underweight can disrupt hormone production, which can affect
+                  menstrual cycles in women and other bodily functions.  
+                </li>
+              </ul>
+            </div>
+            <!-- cat-2  -->
+            <div class="cat-1 p-3">
+              <h1 class="text-xl font-bold mb-4 text-center text-[#17B8A6]">
+                Normal
+              </h1>
+              <p class="mb-4">
+                A healthy BMI range for adults is generally considered to be
+                between 18.5 and 24.9.  
+              </p>
+
+              <ul class="list-disc mx-3">
+                <li>
+                  <span class="font-bold"
+                    >BMI is just one indicator of health:</span
+                  >
+                  It's a simple calculation based on height and weight, and it
+                  doesn't account for factors like muscle mass, bone density, or
+                  body fat distribution.    
+                </li>
+                <li>
+                  <span class="font-bold">Other factors to consider:</span> A
+                  healthy weight is more than just a number on the scale. It's
+                  also about how you feel about your body, your overall health,
+                  and your ability to live an active and fulfilling life.    
+                </li>
+              </ul>
+              <p class="mt-3">
+                If you have any concerns about your weight or health, it's
+                always best to consult with a healthcare professional or a
+                registered dietitian. They can help you determine a healthy
+                weight range for you and provide personalized guidance.  
+              </p>
+            </div>
+            <!-- cat-3  -->
+            <div class="cat-1 p-3">
+              <h1 class="text-xl font-bold mb-4 text-center text-[#17B8A6]">
+                Over Weight
+              </h1>
+              <p class="mb-4">
+                A BMI (Body Mass Index) in the overweight range generally falls
+                between 25 and 29.9.  
+              </p>
+              <h3>Potential Health Risks Associated with Being Overweight:</h3>
+              <ul class="list-disc mx-3">
+                <li>
+                  <span class="font-bold">Type 2 Diabetes:</span> Overweight
+                  individuals are at higher risk of heart disease, high blood
+                  pressure, high cholesterol, and stroke.  
+                </li>
+                <li>
+                  <span class="font-bold">Stroke:</span> Obesity significantly
+                  increases the risk of stroke.  
+                </li>
+                <li>
+                  <span class="font-bold">Mental Health:</span> Overweight and
+                  obesity can sometimes contribute to low self-esteem and other
+                  mental health issues.  
+                </li>
+              </ul>
+            </div>
+            <!-- cat-4  -->
+            <div class="cat-1 p-3">
+              <h1 class="text-xl font-bold mb-4 text-center text-[#17B8A6]">
+                Obesity
+              </h1>
+              <p class="mb-4">
+                A BMI (Body Mass Index) of 30 or higher is generally considered
+                to be in the obesity range.  
+              </p>
+              <p class="mb-4">
+                Obesity is a serious health condition that significantly
+                increases the risk of various health problems, including:
+              </p>
+              <h3>Potential Health Risks Associated with Being Obesity:</h3>
+              <ul class="list-disc mx-3">
+                <li>
+                  <span class="font-bold">Type 2 Diabetes:</span> Overweight
+                  individuals are at higher risk of heart disease, high blood
+                  pressure, high cholesterol, and stroke.  
+                </li>
+                <li>
+                  <span class="font-bold">Stroke:</span> Obesity significantly
+                  increases the risk of stroke.  
+                </li>
+                <li>
+                  <span class="font-bold">Mental Health:</span> Overweight and
+                  obesity can sometimes contribute to low self-esteem and other
+                  mental health issues.  
+                </li>
+                <li>
+                  <span class="font-bold">Sleep Apnea:</span> Obesity has been
+                  linked to an increased risk of several types of cancer,
+                  including breast, colon, endometrial, and kidney cancer.  
+                </li>
+                <li>
+                  <span class="font-bold">Certain Cancers:</span> A sleep
+                  disorder that causes breathing to repeatedly stop and start.
+                </li>
+                <li>
+                  <span class="font-bold">Osteoarthritis:</span> Excess weight
+                  puts extra strain on joints, increasing the risk of
+                  osteoarthritis.  
+                </li>
+              </ul>
+            </div>
+            <!-- cat-5  -->
+            <div class="cat-1 p-3">
+              <h1 class="text-xl font-bold mb-4 text-[#17B8A6]">
+                It's crucial to remember:
+              </h1>
+              <ul class="list-disc mx-3">
+                <li>
+                  <span class="font-bold"
+                    >BMI is just one indicator of health.
+                  </span>
+                  It's a simple calculation based on height and weight, and it
+                  doesn't account for factors like muscle mass, bone density, or
+                  body fat distribution.  
+                </li>
+                <li>
+                  <span class="font-bold">Lifestyle Changes::</span> If you are
+                  obese, making lifestyle changes such as improving your diet
+                  and increasing physical activity can help you lose weight and
+                  reduce your risk of health problems.  
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
