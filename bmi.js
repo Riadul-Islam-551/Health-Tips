@@ -1,4 +1,7 @@
 
+
+
+
 // bmi section 
 const calculateBtn = document.getElementById('calculate-btn');
 const weightInput = document.getElementById('weight');
