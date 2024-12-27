@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button{
+    font-size: 1rem;
+    padding: 7px 17px;
+    margin: 10px;
+    color: white;
+    background-color: #17b8a6;
+    border-radius: 10px;
+    font-family: "Open Sans", serif;
+    font-weight: 700;
+}
+.semifont{
+    color: #757575;
+}
