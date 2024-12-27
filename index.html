@@ -32,13 +32,17 @@
           >
         </div>
         <div class="hidden md:flex space-x-4">
-          <a href="#" class="px-3 py-2 rounded hover:bg-[#3E5879]">Home</a>
-          <a href="#" class="px-3 py-2 rounded hover:bg-[#3E5879]">About</a>
+          <a href="#home" class="px-3 py-2 rounded hover:bg-[#3E5879]">Home</a>
+          <a href="#about" class="px-3 py-2 rounded hover:bg-[#3E5879]"
+            >About</a
+          >
           <a href="#service" class="px-3 py-2 rounded hover:bg-[#3E5879]"
             >Services</a
           >
           <a href="#" class="px-3 py-2 rounded hover:bg-[#3E5879]">Goals</a>
-          <a href="#contact" class="px-3 py-2 rounded hover:bg-[#3E5879]">Contact</a>
+          <a href="#contact" class="px-3 py-2 rounded hover:bg-[#3E5879]"
+            >Contact</a
+          >
         </div>
         <button id="menu-toggle" class="block md:hidden focus:outline-none">
           <svg
@@ -61,8 +65,12 @@
 
     <div id="mobile-menu" class="hidden md:hidden">
       <div class="bg-gray-800 text-white p-4">
-        <a href="#" class="block mb-2 hover:text-gray-200 text-center">Home</a>
-        <a href="#" class="block mb-2 hover:text-gray-200 text-center">About</a>
+        <a href="#home" class="block mb-2 hover:text-gray-200 text-center"
+          >Home</a
+        >
+        <a href="#about" class="block mb-2 hover:text-gray-200 text-center"
+          >About</a
+        >
         <a href="#service" class="block mb-2 hover:text-gray-200 text-center"
           >Services</a
         >
@@ -73,7 +81,7 @@
       </div>
     </div>
     <!-- banner section  -->
-    <div class="banner h-[80vh] bg-[#006A67]">
+    <div id="#home" class="banner h-[80vh] bg-[#006A67]">
       <div
         class="container flex flex-col md:flex-row justify-center items-center h-full m-auto"
       >
@@ -189,12 +197,18 @@
         <p class="text-lg mb-10">
           Get in touch with us for any inquiries or collaborations.
         </p>
-        <div class="contact-content flex flex-col lg:flex-row justify-center items-center ">
-          <div class="contact-right  lg:hidden mb-[70px]">
-            <img src="./assets/images/main-contact.svg" alt="" class="w-[300px] " />
+        <div
+          class="contact-content flex flex-col lg:flex-row justify-center items-center"
+        >
+          <div class="contact-right lg:hidden mb-[70px]">
+            <img
+              src="./assets/images/main-contact.svg"
+              alt=""
+              class="w-[300px]"
+            />
           </div>
           <div class="contact-left w-full">
-            <form class="max-w-md mx-auto text-white ">
+            <form class="max-w-md mx-auto text-white">
               <div class="mb-6">
                 <label for="name" class="block text-left font-medium mb-2"
                   >Name</label
@@ -231,12 +245,109 @@
               <button type="submit" class="button-yellow">Send Message</button>
             </form>
           </div>
-          <div class="contact-right hidden lg:block  lg:ml-[-100px]">
-            <img src="./assets/images/main-contact.svg" alt="" class="w-[300px] lg:w-[500px]" />
+          <div class="contact-right hidden lg:block lg:ml-[-100px]">
+            <img
+              src="./assets/images/main-contact.svg"
+              alt=""
+              class="w-[300px] lg:w-[500px]"
+            />
           </div>
         </div>
       </div>
     </section>
+
+    <!-- about section  -->
+    <div id="about" class="about bg-[#FFF4B7] py-16">
+      <div class="container flex flex-col justify-center items-center m-auto">
+        <h1
+          class="text-3xl lg:text-5xl font-bold text-center mb-10 text-[#17b8a6]"
+        >
+          Our GOALS
+        </h1>
+        <div
+          class="content flex md:flex-wrap md:flex-row justify-center items-center flex-col max-w-screen-md"
+        >
+          <!-- card-1  -->
+          <div
+            class="card card-1 flex justify-center items-center flex-col w-[300px] h-[450px] p-3 rounded-lg mb-9 mx-5"
+          >
+            <div class="image">
+              <img
+                src="./assets/images/about-card-1.svg"
+                alt=""
+                class="w-[200px]"
+              />
+            </div>
+            <div class="card-content mt-4">
+              <h1 class="font-bold text-xl my-3">Inform and Educate</h1>
+              <p class="mb-5 text-sm">
+                To provide accurate and reliable health information to a wide
+                audience.
+              </p>
+              <div class="button-green inline-block">More About</div>
+            </div>
+          </div>
+          <!-- card-2  -->
+          <div
+            class="card card-2 flex justify-center items-center flex-col w-[300px] h-[450px] p-3 rounded-lg mb-9 mx-5"
+          >
+            <div class="image">
+              <img
+                src="./assets/images/about-card-2.svg"
+                alt=""
+                class="w-[200px]"
+              />
+            </div>
+            <div class="card-content mt-4">
+              <h1 class="font-bold text-xl my-3">Promote Healthy Lifestyles</h1>
+              <p class="mb-5 text-sm">
+                To inspire and motivate users to adopt healthier habits.
+              </p>
+              <div class="button-green inline-block">More About</div>
+            </div>
+          </div>
+          <!-- card-3  -->
+          <div
+            class="card card-3 flex justify-center items-center flex-col w-[300px] h-[450px] p-3 rounded-lg mb-9 mx-5"
+          >
+            <div class="image">
+              <img
+                src="./assets/images/about-card-3.svg"
+                alt=""
+                class="w-[200px]"
+              />
+            </div>
+            <div class="card-content mt-4">
+              <h1 class="font-bold text-xl my-3">Health Concerns</h1>
+              <p class="mb-5 text-sm">
+                To provide targeted information and support for specific health
+                conditions or concerns.
+              </p>
+              <div class="button-green inline-block">More About</div>
+            </div>
+          </div>
+          <!-- card-4  -->
+          <div
+            class="card card-4 flex justify-center items-center flex-col w-[300px] h-[450px] p-3 rounded-lg mb-9 mx-5"
+          >
+            <div class="image">
+              <img
+                src="./assets/images/about-card-4.svg"
+                alt=""
+                class="w-[200px]"
+              />
+            </div>
+            <div class="card-content mt-4">
+              <h1 class="font-bold text-xl my-3">Brand and Community</h1>
+              <p class="mb-5 text-sm">
+                To establish a trusted brand in the health and wellness space.
+              </p>
+              <div class="button-green inline-block">More About</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- script  -->
     <script type="module" src="./main.js"></script>
   </body>
