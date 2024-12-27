@@ -11,8 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <!-- styles  -->
-    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/bmr.css" />
   </head>
   <body>
     <!-- navigation section  -->
@@ -67,66 +67,86 @@
         >
       </div>
     </div>
-    <!-- banner section  -->
 
-    <!-- bmr bmi section  -->
-    <div class="checkhealth width-full bg-[#FFF4B7]">
+    <!-- bmr calculator  -->
+    <div
+      class="bmi w-screen h-screen flex flex-col justify-center items-center bg-[#FFF4B7]"
+    >
+      <div class="bmr-calc-right">
+        <img
+          src="./assets/images/bmr-banner.svg"
+          alt=""
+          class="w-[300px] lg:w-[400px]"
+        />
+      </div>
       <div
-        class="container max-w-screen-lg flex items-center flex-col justify-center md:flex-row h-[70vh] border m-auto"
+        class="bmr-calc bmr-calc-rigth container mx-auto p-8 mt-10 rounded-lg max-w-screen-md mx-2"
       >
-        <div
-          class="checkhealth-right flex justify-center md:w-1/2 block md:hidden mb-20"
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#17B8A6] text-center"
         >
-          <img
-            src="./assets/images/check-health.svg"
-            alt=""
-            class="w-[300px] md:w-[500px] lg:mr-16"
-          />
-        </div>
-        <div
-          class="checkhealth-left w-full md:w-1/2 text-center md:text-left md:pl-10 lg:pl-16"
-        >
-          <p class="text-lg md:text-2xl lg:text-3xl font-bold">
-            Do you want to <span class="text-[#17B8A6] font-bold">Healthy</span>
-          </p>
+          FIND BMR
+        </h1>
+
+        <div class="grid grid-cols-2 gap-4">
           <div>
-            <p class="semifont md:text-lg lg:font-bold inline-block mt-3">
-              Then check this out
-            </p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-5 text-[#17b8a6] inline-block mx-3 md:mx-5 md:w-6 lg:w-7"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6"
+            <label for="weight" class="block text-gray-700 font-medium mb-2"
+              >Weight (kg):</label
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
-              />
-            </svg>
+            <input
+              type="number"
+              id="weight"
+              class="border border-gray-300 rounded-md p-2 w-full"
+              placeholder="Enter Weight"
+            />
           </div>
-          <div class="goals-button mt-5">
-            <button class="button"><a href="BMI.html">BMI</a></button>
-            <button class="button"><a href="bmr.html">BMR</a></button>
+          <div>
+            <label for="height" class="block text-gray-700 font-medium mb-2"
+              >Height (cm):</label
+            >
+            <input
+              type="number"
+              id="height"
+              class="border border-gray-300 rounded-md p-2 w-full"
+              placeholder="Enter Height"
+            />
           </div>
         </div>
-        <div
-          class="checkhealth-right flex justify-center w-1/2 hidden md:block"
-        >
-          <img
-            src="./assets/images/check-health.svg"
-            alt=""
-            class="w-[300px] md:w-[500px] lg:mr-16"
-          />
+
+        <div class="grid grid-cols-2 gap-4 mt-3">
+          <div>
+            <label for="age" class="block text-gray-700 font-medium mb-2"
+              >Age:</label
+            >
+            <input
+              type="number"
+              id="age"
+              class="border border-gray-300 rounded-md p-2 w-full"
+              placeholder="Enter Age"
+            />
+          </div>
+          <div>
+            <label for="gender" class="block text-gray-700 font-medium mb-2"
+              >Gender:</label
+            >
+            <select
+              id="gender"
+              class="border border-gray-300 rounded-md p-2 w-full"
+            >
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
         </div>
+        <div class="bmr-button text-right mt-3">
+          <button id="calculate-btn" class="button">Calculate</button>
+        </div>
+
+        <div id="result" class="mt-4"></div>
       </div>
     </div>
 
-    <!-- script  -->
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="bmr.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
