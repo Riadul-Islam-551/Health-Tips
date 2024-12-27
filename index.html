@@ -4,19 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Health Tips</title>
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles  -->
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <!-- navigation section  -->
     <nav class="bg-[#213555] text-white p-4">
-      <div class="container mx-auto flex justify-between items-center">
+      <div
+        class="container max-w-screen-xl mx-auto flex justify-between items-center font-bold"
+      >
         <div class="flex items-center">
           <img
             src="./assets/images/nav-logo.png"
             alt="Logo"
-            class="w-10 h-10"
+            class="w-10 h-10 rounded-full"
           />
-          <span class="ml-2 text-lg font-semibold">BDHeath</span>
+          <span class="ml-2 text-lg font-semibold">BDHealth</span>
         </div>
         <div class="hidden md:flex space-x-4">
           <a href="#" class="px-3 py-2 rounded hover:bg-[#3E5879]">Home</a>
@@ -48,12 +58,75 @@
       <div class="bg-gray-800 text-white p-4">
         <a href="#" class="block mb-2 hover:text-gray-200 text-center">Home</a>
         <a href="#" class="block mb-2 hover:text-gray-200 text-center">About</a>
-        <a href="#" class="block mb-2 hover:text-gray-200 text-center">Services</a>
+        <a href="#" class="block mb-2 hover:text-gray-200 text-center"
+          >Services</a
+        >
         <a href="#" class="block mb-2 hover:text-gray-200 text-center">Goals</a>
-        <a href="#" class="block mb-2 hover:text-gray-200 text-center">Contact</a>
+        <a href="#" class="block mb-2 hover:text-gray-200 text-center"
+          >Contact</a
+        >
+      </div>
+    </div>
+    <!-- banner section  -->
+
+    <!-- bmr bmi section  -->
+    <div class="checkhealth width-full bg-[#FFF4B7]">
+      <div
+        class="container max-w-screen-lg flex items-center flex-col justify-center md:flex-row h-[70vh] border m-auto"
+      >
+        <div
+          class="checkhealth-right flex justify-center md:w-1/2 block md:hidden mb-20"
+        >
+          <img
+            src="./assets/images/check-health.svg"
+            alt=""
+            class="w-[300px] md:w-[500px] lg:mr-16"
+          />
+        </div>
+        <div
+          class="checkhealth-left w-full md:w-1/2 text-center md:text-left md:pl-10 lg:pl-16"
+        >
+          <p class="text-lg md:text-2xl lg:text-3xl font-bold">
+            Do you want to <span class="text-[#17B8A6] font-bold">Healthy</span>
+          </p>
+          <div>
+            <p class="semifont md:text-lg lg:font-bold inline-block mt-3">
+              Then check this out
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 text-[#17b8a6] inline-block mx-3 md:mx-5 md:w-6 lg:w-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
+              />
+            </svg>
+          </div>
+          <div class="goals-button mt-5">
+            <button class="button"><a href="#">BMI</a></button>
+            <button class="button"><a href="#">BMR</a></button>
+          </div>
+        </div>
+        <div
+          class="checkhealth-right flex justify-center w-1/2 hidden md:block"
+        >
+          <img
+            src="./assets/images/check-health.svg"
+            alt=""
+            class="w-[300px] md:w-[500px] lg:mr-16"
+          />
+        </div>
       </div>
     </div>
 
+    <!-- script  -->
     <script type="" src="./main.js"></script>
   </body>
 </html>
