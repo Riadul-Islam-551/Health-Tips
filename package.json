@@ -1,7 +1,7 @@
 {
   "name": "health-tips",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "vite"
   },
